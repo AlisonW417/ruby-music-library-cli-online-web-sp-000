@@ -62,8 +62,8 @@ class MusicLibraryController
     input = gets.strip.to_i 
     if input > 0 && input <= Song.all.length 
       array = list_songs.split
-      binding.pry
+      
     end 
-    
+    binding.pry
   end 
 end 
