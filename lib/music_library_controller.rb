@@ -24,5 +24,6 @@ class MusicLibraryController
   end 
   
   def list_artists
+    Artist.all.
   end 
 end 
