@@ -15,9 +15,8 @@ class MusicImporter
     Dir.glob("#{path}/*.mp3").map do |file|
       file.gsub("#{path}/", "")
     end
-    binding.pry
   end 
-  
+  binding.pry
   def import 
     files.each {|f| Song.create_from_filename(f)}
   end 
