@@ -16,7 +16,7 @@ class MusicImporter
       file.gsub("#{path}/", "")
     end
   end 
-  binding.pry
+
   def import 
     files.each {|f| Song.create_from_filename(f)}
   end 
