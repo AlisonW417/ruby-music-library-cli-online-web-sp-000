@@ -61,7 +61,7 @@ class MusicLibraryController
    puts "Which song number would you like to play?"
     input = gets.strip.to_i 
     if input > 0 && input <= Song.all.length 
-      list_songs
+      list_songs.each do 
       
     end 
     binding.pry
