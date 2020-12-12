@@ -18,9 +18,9 @@ class MusicLibraryController
   end 
   
   def list_songs
-    MusicImporter.files.each.with_index do |file, index|
+    Song.all.each.with_index do |song, index|
       list = index + 1 
-      puts "#{list}. #{file}"
+      puts "#{list}. #{song}"
     end 
   end 
 end 
