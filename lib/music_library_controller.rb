@@ -18,6 +18,6 @@ class MusicLibraryController
   end 
   
   def list_songs
-    
+    Song.all.each
   end 
 end 
