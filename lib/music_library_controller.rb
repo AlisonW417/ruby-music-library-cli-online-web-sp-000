@@ -30,5 +30,6 @@ class MusicLibraryController
   end 
   
   def list_genres
+    Genre.all.sort 
   end 
 end 
